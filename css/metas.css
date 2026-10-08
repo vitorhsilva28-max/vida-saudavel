@@ -1,0 +1,190 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 5vw; 
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.logo-icon {
+  font-size: 2.5rem;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  font-weight: 900;
+  color: #74e062;
+  line-height: 1.1;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.nav-menu {
+  background-color: #31353a;
+  padding: 0.8rem 3rem;
+  border-radius: 30px;
+  display: flex;
+  gap: 3rem;
+}
+
+.nav-menu a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.nav-menu a.active {
+  color: #74e062;
+}
+
+
+.dashboard-container {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 5vw;
+  align-items: center;
+  width: 100%;
+  flex: 1; 
+  padding-bottom: 2rem;
+}
+
+.goals-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem; 
+  width: 100%;
+}
+
+
+.goal-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.goal-info {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  min-width: 320px;
+}
+
+.icon-box {
+  width: 70px;
+  height: 70px;
+  border: 2px solid #74e062;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #74e062;
+  flex-shrink: 0;
+}
+
+.icon-box svg {
+  width: 36px;
+  height: 36px;
+}
+
+.goal-text h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.goal-text p {
+  font-size: 0.95rem;
+  color: #a0a0a0;
+  margin-top: 4px;
+}
+
+
+.goal-progress {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex: 1; 
+  background-color: #121212;
+  padding: 1rem 1.2rem;
+  border-radius: 12px;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 16px;
+  background-color: #22252a;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #55ff33;
+  border-radius: 10px;
+}
+
+.check-circle {
+  width: 28px;
+  height: 28px;
+  border: 2px solid #555;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.check-circle.checked {
+  background-color: #55ff33;
+  border-color: #55ff33;
+  color: #000000;
+}
+
+
+.trophy-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.trophy-icon {
+  width: 35vw;
+  max-width: 420px;
+  height: auto;
+  color: #ccff00;
+  stroke-width: 1.2;
+}
+
+
